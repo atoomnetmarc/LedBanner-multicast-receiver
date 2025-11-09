@@ -1,3 +1,10 @@
+/*
+
+Copyright 2025 Marc Ketel
+SPDX-License-Identifier: Apache-2.0
+
+*/
+
 #include "events.h"
 #include <SDL3/SDL.h>
 

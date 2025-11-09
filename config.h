@@ -1,3 +1,10 @@
+/*
+
+Copyright 2025 Marc Ketel
+SPDX-License-Identifier: Apache-2.0
+
+*/
+
 #ifndef CONFIG_H
 #define CONFIG_H
 

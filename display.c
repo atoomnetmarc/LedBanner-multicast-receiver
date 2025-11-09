@@ -1,3 +1,10 @@
+/*
+
+Copyright 2025 Marc Ketel
+SPDX-License-Identifier: Apache-2.0
+
+*/
+
 #include "display.h"
 #include "config.h"
 
@@ -112,8 +119,8 @@ void draw_pixels_from_buffer(SDL_Renderer *renderer, const unsigned char *buf, s
 
     // Each pixel: 2 bytes: RRRRRGGG GGGBBBBB  (5-6-5)
     // buf index: (y * WIDTH + x) * 2
-    _Static_assert(MC_EXPECTED_SIZE == WIDTH * HEIGHT * 2,
-                   "MC_EXPECTED_SIZE must equal WIDTH * HEIGHT * 2");
+    static_assert(MC_EXPECTED_SIZE == WIDTH * HEIGHT * 2,
+                  "MC_EXPECTED_SIZE must equal WIDTH * HEIGHT * 2");
 
     for (int y = 0; y < HEIGHT; ++y) {
         for (int x = 0; x < WIDTH; ++x) {
