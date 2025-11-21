@@ -11,6 +11,8 @@ SPDX-License-Identifier: Apache-2.0
 #define WIDTH  80
 #define HEIGHT 8
 
+#define FPS_AVERAGE_FRAMES 42
+
 #define MC_GROUP         "239.0.0.1"
 #define MC_PORT          1565
 #define MC_EXPECTED_SIZE (WIDTH * HEIGHT * 2)
